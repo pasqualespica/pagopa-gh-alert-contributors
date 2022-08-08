@@ -1,0 +1,1 @@
+# pagopa-gh-alert-contributors
