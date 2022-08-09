@@ -7,7 +7,9 @@
 ## Github API docs
 
 [GH REST api](https://docs.github.com/en/rest)
+
 [The Events API is a read-only API to the GitHub events.](https://docs.github.com/en/rest/activity/events)
+
 [PyGithub api](https://pygithub.readthedocs.io/en/latest/apis.html)
 
 
