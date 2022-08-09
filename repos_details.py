@@ -1,8 +1,5 @@
-from asyncio import events
-import re
 from github import Github
 import os
-# from pprint import pprint
 
 token = os.getenv('GH_TOKEN', '...')
 # print(f"token {token}")
@@ -12,17 +9,6 @@ org = "pagopa"
 members = g.get_organization(org).get_members()
 members_set = {m.login for m in members}
 # print(members_set)  
-
-# for author in mmm_authors:
-#     # events_on_org = { event.repo.name for event in g.get_user(author).get_events() if (event.org is not None) and event.repo.name.startswith("pagopa")}
-#     events_on_org = { event.repo.name for event in g.get_user(author).get_events() if (event.org is not None)}
-#     g.get_user
-#     if (len(events_on_org) == 0):
-#         print(author, events_on_org)
-    
-# for p in g.get_organization(org).get_repo("pdnd-apps-python-commons").get_issues_events():
-#     # print(p.actor, p.event)
-#     print(p.actor.login)
 
 skipped = set(('io-app','io-backend','interop-be-purpose-process'))
 

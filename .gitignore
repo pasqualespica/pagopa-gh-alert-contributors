@@ -130,3 +130,4 @@ dmypy.json
 
 *venv/
 *.env
+notContribute90days.yaml

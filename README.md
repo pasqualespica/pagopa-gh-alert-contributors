@@ -18,6 +18,6 @@
 python -m venv gh-stats-venv
 . gh-stats-venv/bin/activate
 pip install -r requirements.txt
-
+time GH_TOKEN=<YOUR_TOKEN> python repos_details.py
 ```
 > NOTE : to update requirements dependecy typing `pip freeze > requirements.txt`
