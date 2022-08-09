@@ -1,4 +1,3 @@
-# GH_TOKEN=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 python repos.py
 import re
 from github import Github
 import os

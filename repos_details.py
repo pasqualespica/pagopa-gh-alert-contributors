@@ -1,4 +1,3 @@
-# GH_TOKEN=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 python repos_details.py
 from asyncio import events
 import re
 from github import Github
@@ -25,7 +24,7 @@ members_set = {m.login for m in members}
 #     # print(p.actor, p.event)
 #     print(p.actor.login)
 
-skipped = set(('io-app','io-backend',))
+skipped = set(('io-app','io-backend','interop-be-purpose-process'))
 
 did_something_set = set() # empty
 repos = g.get_organization(org).get_repos('all')
